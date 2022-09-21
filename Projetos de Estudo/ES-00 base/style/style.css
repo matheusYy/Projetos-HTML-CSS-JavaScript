@@ -1,0 +1,40 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background-color: white;
+}
+
+.all-img {
+  background-image: url(../img/Sunn\ [1000x500].png);
+  height: 200px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+
+.img-1 {
+  background-position: left top; 
+}
+.img-2 {
+  background-position: left center;
+}
+.img-3  {
+  background-position: right bottom;
+}
+/*
+left top = imagem da esquerda pra cima(padrão)
+left right = imagem da direita para cima
+right bottom = direita para baixo
+right left = esquerda para baixo
+center center = centro da imagem
+
+
+primeiro vem as colunas, que são três right (direita) center(centro) left(esquerda)
+
+depois as colunas, top(topo) center(center) bottom(baixo)
+*/

@@ -1,0 +1,41 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background-image: url(../img/Sunn\ [1000x500].png);
+  background-size: 900px 400px;
+  background-repeat: no-repeat;
+
+  /*
+ colocar imagem de fundo no elemento body, backgrounds size altera o tamanho da da imagem, background repeat tem opçoes de repetiçoes da imagem 
+  */
+}
+
+/*pequeno teste */
+.ol-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  width: 190px;
+  justify-content: space-between;
+  padding: 4px 21px 4px 17px;
+}
+.log-icon {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(0, 0, 0);
+  width: 150px;
+  height: 150px;
+  
+}
+.li-list {
+  padding: 0px;
+  margin: 0px;
+  height: auto;
+  width: auto;
+
+}
