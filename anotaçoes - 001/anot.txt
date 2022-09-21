@@ -1,3 +1,24 @@
 primeiras anotaçoes HTML5 e CSS3
 
   criar um repositorio no GitHub e colar os arquivos para criar um site com endereço gratis
+
+  --------------------------
+Criaçao de wallpaper nos sites ultilizando imagens de fundo
+
+  Back-ground-image: linear-gradient('valor da posiçao, seja to right ou em inclinaçao, e depois as cores')
+    exemplo:
+      background-image: linear-gradient(to bottom, rgb(255, 81, 0), rgb(254, 216, 0));
+
+  Aplicando imagens em fundos:
+    exemplo:
+       background-image: url('../img/pattern003.png');
+        tambem pode ser ultilizado em 'body'
+          exemplo:
+            body {
+              background-image: url('../img/pattern003.png');
+             }
+Aplicando duas classes em um uníco objeto
+  exemplo:
+    <div class="ui-quade all-quade"> 
+      ou
+       <header class="primeira-class segunda-classe terceira-classe" etc....
