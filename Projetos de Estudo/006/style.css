@@ -1,0 +1,45 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+.pai-header {
+  position: relative;
+  background-color: black;
+  color: white;
+  margin: auto;
+  height: 180px;
+
+}
+.fil-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+.ui-lore {
+  padding: 10px;
+  margin: 35px 0px 0px 26px;
+  
+}
+.ui2-lore {
+  margin-bottom: 10px;
+}
+
+.pai-footer {
+  position: relative;
+  background-color: black;
+  color: white;
+  margin: auto;
+  height: 55px;
+
+}
+
+.che-footer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
