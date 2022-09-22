@@ -1,11 +1,13 @@
-primeiras anotaçoes HTML5 e CSS3
+Anotaçoes do estudo de html e css
 
   criar um repositorio no GitHub e colar os arquivos para criar um site com endereço gratis
 
   --------------------------
-Criaçao de wallpaper nos sites ultilizando imagens de fundo
+Anotaçoes de 000 a 003
 
-  Back-ground-image: linear-gradient('valor da posiçao, seja to right ou em inclinaçao, e depois as cores')
+  Criaçao de wallpaper nos sites ultilizando imagens de fundo
+
+    Back-ground-image: linear-gradient('valor da posiçao, seja to right ou em inclinaçao, e depois as cores')
     exemplo:
       background-image: linear-gradient(to bottom, rgb(255, 81, 0), rgb(254, 216, 0));
 
@@ -22,3 +24,80 @@ Aplicando duas classes em um uníco objeto
     <div class="ui-quade all-quade"> 
       ou
        <header class="primeira-class segunda-classe terceira-classe" etc....
+
+-----------=------
+Anotaçoes - 004
+  
+  body {  
+    height: 100vh;
+    background-image: url(../000/img/wallpaper002.jpg);
+    background-position: center center; posiçao da imagem  de fundo
+    background-repeat: no-repeat; = se a imagem repete ou não
+    background-size: auto; = altera o tamanho da imagem de fundo (o padrão é auto)
+    }
+
+  --------------------------
+
+  Anotaçoes 005
+
+  Sobre as classes conteudo e container no section e article
+
+    a section por padrão todos os container tem sua posiçao relativa
+      o article recebeu a position: absolute;
+
+
+      a regra é, oque está contendo o container seja uma section ou div, tenha o posicionamento relativo e oque está dentro o conteudo é absolute.
+
+Com posicionamento absolute algumas configuraçoes especiais podem ser     ultilizadas, como por exemplo:
+
+  left: 0px;
+  top: 0px;
+
+  left e top, é como se fosse adicionado padding a esquerda e padding ao topo do bloco relativo.
+
+          ------------------------------------
+Esquerda  |  X                          Direia - Topo
+Baixo     |
+          | 
+          | 
+          |
+Esquerda  |  X                          Direita - Baixo
+Baixo       ----------------------------------------
+
+-- O posicionamento inicial de left e top sempre será no topo a esquerda do bloco na posiçao 'Esquerda baixo' aonde se encontra o x ao lado
+
+left: 100px;
+  Seria como um padding de 100 pixels a esquerda do bloco, fazendo o bloco ir para a direita do conteudo.
+
+top: 100px;
+  Seria um padding no top do conteudo, fazendo-o ir para baixo.
+
+  Valores negativos de left e top fariam o conteudo ir para a posiçao oposta, ou seja left: Esquerda; & top: Para cima;
+----
+--------
+transform: translate(-0%, -0%);
+  São colocados dois valores onde posiciona o conteudo para baixo, cima. esquerda ou direita.
+
+    transform: translate(100px, 100px);
+      O primeiro valor faria o conteudo ir para direita e o outro ir para a baixo, ou seja 100 pixels para direita e 100 pixels para baixo, sempre direita e esquerda depois baixo e topo.
+
+    transform> translate(-100px, -100px);
+      Com valores negativos em vez de ir para a direita ele vai para a esquerda e em vez de ir para baixo ele vai para cima, ou seja seriam 100 pixels negativos para cima e 100 pixels negativos para esquerda.
+
+Usando o top, left e o 'transform: translate' se for usado top: 50%, left: 50%, ou seja, 50% do container para baixo e 50% para direita, o posicionamento não seria no centro mas a ponta do bloco ao topo-esquerda estaria posicionado no centro, exemplo:
+
+          ------------------------------------
+Esquerda  |  X                          Direia - Topo
+Baixo     |
+          |                 
+          |           Centro do Container
+          |                   -------------
+          |                   | X
+Esquerda  |  X                |         Direita - Baixo
+Baixo       ----------------------------------------
+
+Localizando-se exatamente onde está o X de 'Direia-Baixo'.
+
+  Usandoo o transform: translate(-50%, -50%);
+    O bloco iria 50% do container para cima e 50% do container para esquerda
+    exatamente o oposto de top e left, fazendo o conteudo se centralizar de forma fixa.

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redimensionando</title>
+
+<style>
+  body {
+   /* height: 100vh;
+    background-image: url(../000/img/wallpaper002.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-attachment: scroll;
+    */
+    height: 100vh;
+    background: rgb(60, 60, 60) url(../000/img/wallpaper002.jpg) center center no-repeat fixed;
+    background-size: cover;
+  }
+  
+
+/*
+OBSERVAÇAO IMPORTANTE no Shorthand di Background o [size] não pode ser ultilizado ao menos por enquanto, o valor está na documentaçao mas ainda não pode ser ultilizado/não funciona
+
+background-attachment: scroll; -- deixa a imagem com rolamento
+ background-attachment: fixed; -- faz a imagem ficar fixa e o conteudo com rolamento normal
+
+ShortHand - Background
+  ordem do ShortHand
+    color > image > position > repeat > [size] > attachment
+ 
+  background-size: auto; -  padrão
+  background-size: contain; - faz com a imagem seja 100% exibida, se a tela for maior que a imagem, é criado uma rolagem vertical
+
+    background-size: cover; -- significa sobrir, ele vai fazer caber idependente do tamanho da tela ou até cortar a imagem,
+*/
+
+
+  main {
+    width: 300px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 11px black;
+    background-color: rgb(60, 60, 60);
+    color: white;
+  
+  }
+
+.ddl-text {
+  color: red;
+}
+.ddl-text1 {
+  color: rgb(106, 148, 255);
+}
+</style>
+
+</head>
+<body>
+  
+<main>
+  <h1>Redimensionar imagens</h1>
+  <p> 
+    <span class="ddl-text">Exemplo de como redimensionalisar imagens em hmtl, a maioria das opçoes de background-size depemde muito do que você quer fazer, background-postition altera a posiçao da imagem seja ela da direita para a esquerda ou do centro para baixo, background-repeat tem varias opçoes de repetiçoes de imagem como o proprio nome diz, seja para no eixo y ou no x e mais algumas opçoes, por enquanto é isso. :]</span> <span class="ddl-text1">
+      expedita, et nam aperiam, alias aliquid ad optio amet officiis nisi eos saepe praesentium tenetur? Fugit laboriosam atque dicta voluptate sapiente.
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sunt, neque, reiciendis sapiente eveniet iusto autem eligendi maiores obcaecati vitae hic facere ducimus recusandae nam sint iure temporibus placeat et. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit vitae, sint similique in praesentium provident corporis dicta eum consectetur eius, veritatis asperiores a explicabo repellat iste vero obcaecati laboriosam Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui dolorem neque nulla quas ipsum officiis, facilis minus. Rerum, ipsum dicta possimus nulla impedit deleniti recusandae vero ad voluptates voluptatum? Placeat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, rem eum facilis consectetur minima et laborum ullam blanditiis eveniet sit possimus, itaque perferendis aspernatur ad illum iste? Reiciendis, dolore Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at ut repellat minima vitae voluptatibus placeat sunt blanditiis enim exercitationem expedita unde deserunt, hic autem consequatur suscipit illum minus tempore!
+    </span> </p>
+
+</main>
+
+
+
+</body>
+</html>
