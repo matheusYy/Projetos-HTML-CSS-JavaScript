@@ -1,31 +1,102 @@
+@charset "UTF-8";/*definir regra usando charset, regra utf8 para não ocorrer erro de assentuaçao*/
+@font-face {
+  font-family: ReenieBenie;
+  src: url(fonts/ReenieBeanie-Regular.ttf);
+}
+@font-face {
+  font-family: Alata;
+  src: url(fonts/Alata-Regular.ttf);
+}
+:root {
+  --font1: 'ReenieBenie','cursive';
+  --font2: 'Alata', 'cursive';
+  --fontpadrao: 'Verdana', 'Arial', 'sans-serif';
+}
+/*usando pseudoclass root, para criar algumas variaveis
+
+o fontface importa fonts usando uma url que aponta para um diretorio local e usando o fontfamily, colocamos o nome da fonte para ser usado*/  
+
 * {
   padding: 0px;
   margin: 0px;
   list-style-type: none;
+  text-decoration: none;
 }
+body, html {
+  background-color: rgb(214, 214, 214);
+  width: auto;
+}
+
+header > div.fil-header > h2 > strong > a:hover {
+  color: rgb(94, 47, 94);
+  text-decoration: revert;
+}
+
 
 .pai-header {
   position: relative;
   background-color: black;
   color: white;
-  margin: auto;
   height: 180px;
-
+  font-variant: small-caps;
+  font-weight: 300;
+  margin-bottom: 10px;
+  font-family: var(--font2);
+  font-size: 1.2em;  
+  box-shadow: 0px -1px 12px 3px black
+  /*font varient muda a forma que o text aparece na imagem, seja todas minusculas ou maiusculas ou primeira letra maiscula*/
 }
 .fil-header {
   position: absolute;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  
+  top: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  font-size: 100;
+  /*Muda a posiçao para absolute e ganha algumas opçoes especiais, como mudar o posicionamedo usandp left e top e com o trasform*/
+}
+.fil-header > h2 {
+  font-size: 1.2em;
+/*muda o tamanho da font*/
+}
+.ui-imgsec {
+  background-image: url(img/background001.jpg);
+  background-position: right center;
+  box-shadow:  0px 1px 8px 0px rgba(0, 0, 0, 0.576);
+  background-attachment: fixed;
+}
+/*
+background-attachment -- faz com que faça um efeito parallax na imagem  deixando ela fixada
+pegando imagem com background-image
+mudando posiçao com background-position*/
+
+.ui-imgsec1 {
+  background-image: url(img/background002.jpg);
+  background-position: center center;
+  box-shadow:  0px 1px 8px 0px rgba(0, 0, 0, 0.576);
+  background-attachment: fixed;
 }
 .ui-lore {
-  padding: 10px;
+  padding: 10px 10px 10px 40px;
   margin: 35px 0px 0px 26px;
-  
+  line-height: 2em;
+  font-family: var(--font1);
+  font-weight: 500;
+  font-size: 1.8em;
+  color: rgb(91, 91, 91);
+  /*Usando a variavel criada com root, var(nome da variavel)*/
 }
-.ui2-lore {
-  margin-bottom: 10px;
+.ui2-lore { 
+  margin: 100px;
+  width: 340px;  
+  margin-bottom: 25px;
+  background-color: rgba(0, 0, 0, 0.492);
+}
+.lore-color {
+  color: yellow;
+}
+.lore-color1 {
+  color: white;
 }
 
 .pai-footer {
@@ -34,7 +105,7 @@
   color: white;
   margin: auto;
   height: 55px;
-
+  box-shadow: 2px 5px 9px 2px black;
 }
 
 .che-footer {
@@ -42,4 +113,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.che-footer > strong > a:hover {
+  color: rgb(94, 47, 94);
+  text-decoration: revert;
+
 }
