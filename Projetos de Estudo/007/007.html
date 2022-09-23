@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela</title>
+<style>
+  table {
+  width: 400px;
+  border-collapse: collapse;
+  }
+  td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  tr {
+    background-color: rgb(88, 88, 88);
+  }
+/*Seleciona todos o conteudo da tabela*/
+  .td-color {
+    background-color: rgb(0, 255, 81);
+    color: red;
+  }
+/*Seleciona uma classe especifica de td, ou seja td = conteudo da tabela*/
+.line-color {
+  background-color: rgb(121, 45, 236);
+}
+/*Seleciona um tr, tr = uma linha inteira na tabela*/
+.line-color1 {
+  background-color: aqua;
+  color: coral;
+}
+.line-color2 {
+  background-color: bisque;
+}
+</style>
+
+
+</head>
+<body>
+  
+<main>
+  <h1>Minha Primeira Tabela</h1>
+
+  <table>
+    <tr class="line-color"> <!--Primeira Linha-->
+      <td>A1</td> 
+      <td>B1</td>
+      <td>C1</td>
+      <td>D1</td>
+    </tr>
+    <tr class="line-color1"> <!--Segunda Linha-->
+      <td class="td-color">A2</td>
+      <td>B2</td>
+      <td>C2</td>
+      <td>D2</td>
+    </tr>
+    <tr> <!--Terceira Linha-->
+      <td>A3</td>
+      <td>B3</td>
+      <td>C3</td>
+      <td>D3</td>
+    </tr>
+    <tr> <!--Quarta linha-->
+      <td>A4</td>
+      <td>B4</td>
+      <td>C4</td>
+      <td>D4</td>
+    </tr>
+    <tr> <!--Quinta Linha-->
+      <td>A5</td>
+      <td>B5</td>
+      <td>C6</td>
+    </tr>
+    <tr class="line-color2"> <!--Sexta linha-->
+      <td>A6</td>
+      <td>B6</td>
+    </tr>
+  </table>
+
+</main>
+
+</body>
+</html>

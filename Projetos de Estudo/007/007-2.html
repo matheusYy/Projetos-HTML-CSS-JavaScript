@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelas Grandes</title>
+
+  <style>
+    table {
+      width: 500px;
+      border-collapse: collapse;
+      position: relative;
+    }
+
+    td, th {
+      border: 1px solid black;
+      padding: 10px;
+    }
+    thead, tfoot {
+      background-color: gray;
+      color: white;
+    }
+    .numb {
+      text-align: right;
+    }
+    .ui-porc {
+      text-align: center;
+    }
+   tbody > tr:nth-child(odd) {
+    font-weight: bold;
+   }
+   tbody > tr:nth-child(even) {
+    background-color: rgb(211, 211, 211);
+   }
+   thead > tr > th {
+    position: sticky;
+    top: -1px;
+    background-color: gray;
+/*Deixa o titulo da tabela fixado quando a tela for rolada
+usando o positon sticky e top*/
+   }
+  </style>
+
+</head>
+<body>
+  
+ <main>
+  <h1>Anatomia para tabelas Grandes</h1> <!-- Anatomia das tabelas, pode conter um theadr, tbody e tfoot-->
+  <caption class="io-titulo">Tabela Da Populaçao</caption>
+  <table>
+    <thead> <!--Cabeça, onde ficam os titulos-->
+      <tr>
+        <th scope="col">Estado</th>
+        <th scope="col">Populaçao</th>
+        <th scope="col">% da pop.total</th>
+      </tr>
+    </thead>
+
+    <tbody> <!--Corpo, onde ficam os dados da tabela-->
+      <tr>
+        <td>São Paulo</td>
+        <td class="numb">45 919 049</td>
+        <td class="ui-porc">21,7%</td>
+      </tr>
+      <tr>
+        <td>Minas Gerais</td>
+        <td class="numb">21 168 791</td>
+        <td class="ui-porc">10,1%</td>
+      </tr>
+      <tr>
+        <td>Bahia</td>
+        <td class="numb">14 873 064</td>
+        <td class="ui-porc">8,2%</td>
+      </tr>
+      <tr>
+        <td>Paraná</td>
+        <td class="numb">11 433 975</td>
+        <td class="ui-porc">7,1%</td>
+      </tr>
+      <tr>
+        <td>Rio Grande do Sul</td>
+        <td class="numb">11 377 239</td>
+        <td class="ui-porc">5,4%</td>
+      </tr>
+      <tr>
+        <td>Pernambuco</td>
+        <td class="numb">9 557 071</td>
+        <td class="ui-porc">4,5%</td>
+      </tr>
+      <tr>
+        <td>Ceará</td>
+        <td class="numb">9 132 079</td>
+        <td class="ui-porc">4,3%</td>
+      </tr>
+      <tr>
+        <td>Pará</td>
+        <td class="numb">8 608 878</td>
+        <td class="ui-porc">4,1%</td>
+      </tr>
+      <tr>
+        <td>Santa Catarina</td>
+        <td class="numb">7 164 788</td>
+        <td class="ui-porc">3,4%</td>
+      </tr>
+      <tr>
+        <td>Maranhão</td>
+        <td class="numb">7 075 181</td>
+        <td class="ui-porc">3,4%</td>
+      </tr>
+      <tr>
+        <td>Goias</td>
+        <td class="numb">7 018 354</td>
+        <td class="ui-porc">3,3%</td>
+      </tr>
+      <tr>
+        <td>Amazonas</td>
+        <td class="numb">4 144 579</td>
+        <td class="ui-porc">2,0%</td>
+      </tr>
+      <tr>
+        <td>Espírito Santo</td>
+        <td class="numb">4 018 650</td>
+        <td class="ui-porc">1,9%</td>
+      </tr>
+      <tr>
+        <td>Paraíba</td>
+        <td class="numb">4 018 127</td>
+        <td class="ui-porc">1,95</td>
+      </tr>
+      <tr>
+        <td>Rio Grande do Norte</td>
+        <td class="numb">3 506 853</td>
+        <td class="ui-porc">1,7%</td>
+      </tr>
+      <tr>
+        <td>Mato Grosso</td>
+        <td class="numb">3 484 466</td>
+        <td class="ui-porc">1,7%</td>
+      </tr>
+      <tr>
+        <td>Alagoas</td>
+        <td class="numb">3 337 357</td>
+        <td class="ui-porc">1,6%</td>
+      </tr>
+      <tr>
+        <td>Piauí</td>
+        <td class="numb">3 273 227</td>
+        <td class="ui-porc">1,6%</td>
+      </tr>
+      <tr>
+        <td>Distrito Federal</td>
+        <td class="numb">3 015 268</td>
+        <td class="ui-porc">1,45</td>
+      </tr>
+      <tr>
+        <td>Mato Grosso do Sul</td>
+        <td class="numb">2 778 987</td>
+        <td class="ui-porc">1,3%</td>
+      </tr>
+      <tr>
+        <td>Sergipe</td>
+        <td class="numb">2 298 696</td>
+        <td class="ui-porc">1,1%</td>
+      </tr>
+      <tr>
+        <td>Rondonia</td>
+        <td class="numb">1 777 225</td>
+        <td class="ui-porc">0,8%</td>
+      </tr>
+      <tr>
+        <td>Tocantins</td>
+        <td class="numb">1 572 866</td>
+        <td class="ui-porc">0,7%</td>
+      </tr>
+      <tr>
+        <td>Acre</td>
+        <td class="numb">881 935</td>
+        <td class="ui-porc">0,4%</td>
+      </tr>
+      <tr>
+        <td>Amapá</td>
+        <td class="numb">845 731</td>
+        <td class="ui-porc">0,4%</td>
+      </tr>
+      <tr>
+        <td>Roraima</td>
+        <td class="numb">605 761</td>
+        <td class="ui-porc">0,3%</td>
+      </tr>
+
+
+    </tbody>
+
+    <tfoot> <!--Rodapé, onde fica alguns titulos ou dados da tabela-->
+      <tr>
+        <th scope="row">Total</th> 
+        <td class="numb"><strong>210.147.125</strong></td>
+        <td class="ui-porc">100%</td>
+      </tr>
+    </tfoot>
+  </table>
+
+ </main>    
+
+
+</body>
+</html>

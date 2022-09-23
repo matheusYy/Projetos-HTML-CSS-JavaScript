@@ -1,0 +1,180 @@
+Tabelas em html -- Anotaçoes
+
+IMPOTANTE -
+table {
+  border-collapse: collapse;
+    }
+    Isso faz com que as bordas se juntem na tabela
+      Usado no diretamente no table.
+
+  Os valores de colocados em uma tabela respeitando sua hierarquia será sempre para frente, exemplo:
+
+    A1 depois AB1, C1, D1
+
+    Para criar linhas nas tabelas é ultilizado o <tr>.
+        Para criar conteúdos dentro da linha é ultilizado <td>, exemplo:
+        
+        <table>
+          <tr> 
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+            <td>D1</td>
+          </tr>
+          <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+            <td>D2</td>
+          </tr>
+        </table>
+
+Esse codígo cria uma tabela de duas linhas, com 4 conteúdo cada.
+
+------------------------
+A1  |  B1  |  C1  |  D1  |
+A2  |  B2  |  C2  |  D2  |
+-------------------------
+      Dessa forma.
+
+Observaçoes Importantes:
+  Nos documentos da W3C, na html5 ele coloca como opcional o fechamendo de <td> e <tr> não precisam de fechamendo, (</tr>) & (</td>)
+
+Se não é colocado de forma correta a hierarquia dos documentos os objetos vão aparecer em cima ou em baixo de sua tabela. (importante, para não dar erro na tabela, a hierarquia deve ser bem organizada)
+
+
+É possivel alinhar os itens na tabela com, text-align e vertical-align
+
+  text-align = left, center, right -- por padão é left
+
+  -----------------------
+  |  left |  center  |  right
+  |
+  |   A         A         A
+  |
+  |
+
+E vertical-align, top, middle e bottom -- por padrão é middle
+
+ -----------------------
+  |  A -- top
+  |
+  |  A -- middle      
+  |
+  |  A   -- bottom
+
+
+Agora para usar em grandes tabelas usamos:
+  caption -- texto acima da tabela
+  thead -- para o cabeçalho da tabela, contém titulos e etc
+  tbody -- onde vai ficar todos os dados da tabela
+  tfoot --  rodapé da tabela
+
+
+                      caption
+  ------------------------------------------------------
+|
+|                       thead   
+|------------------------------------
+|                       tbody
+|             
+|   
+|
+|-------------------------------------------
+|                       tfoot
+
+th -- usado para colocar titulos 
+tr --- usado para criar linhas
+td ---- usado para colocar informaçoes nas linhas
+
+  exemplo:
+
+     <tr> -- uma linha
+        <td>São Paulo</td>   -- primeira espaço do linha na horizontal
+        <td class="numb">45 919 049</td> --- segundo espaço na linha na   horizontal
+    <tr>
+        Outro exemplo para titulos:
+
+          <tr> -- criaçao de linha na horizontal
+              <th>Estado</th>  -- criaçao de um titulo no primeiro espaço da  linha
+          </tr>
+
+-----------------------------------------------------------
+----------------------
+-----------
+---
+
+DEFINIÇAO DE SCOPE
+  exemplo:
+    scope="row"> -- define que o conteúdo do titulo está localizado a baixo dele
+
+    scope="col"> -- define que o conteúdo do tituloe está localizado ao lado dele
+
+A impotancia da ultilizaçao do "scope" para os mecanismo de busca como google, para quando o site for colocado no ar os macanismo de busca consigam entender exatamente oque contem na tabela.
+  para fins de designer não obtem nenhuma alteraçao mas para fins de semantica em seu site isso é de extrema impotancia, sempre use em suas tabelas.
+
+-------------------------------
+------------
+----
+  
+  Efeito Zebrado -- colocar uma linha de cada cor na tabela
+
+    Quando uma tabela é muito grande e ocorre uma dificuldade para ler o conteúdo é usado o Efeito Zebrado.
+      Usando a pseudo classe :nth-child().
+
+      exemplo:
+        thead > tr:nth-child(2n)
+
+Com essa configuraçao será pulado uma linha e depois selecionada a outra
+
+linha 1 
+linha 2 X     Seráo selecinados dessa forma, caso seja tr:nth-child(3n)
+linha 3           será pulado 2 em 2 linhas
+linha 4 X
+linha 5 
+linha 6 X
+linha 7
+linha 8 X
+
+  Também pode ser ultilizado em :nth-child(odd) --  odd significa ímpar ou seja todos os conteúdos 1,3,5,7,9 etc seráo selecinados.
+
+ou "even" :nth-child(even) que no caso seria par em vez de ímpar, 2,4,6,8,10 et
+
+
+com essa seleçao no tr, podem ser usado qualquer configuraçaono tr
+como tamanho da fonte, peso da fonte, cor etc..
+
+---------------------------------------------------------
+---------------------------------------
+--------------------
+------
+
+  Efeitos para a tabela
+    table {
+      position: relative; -- IMPORTANTE: deve ser definido position relative para a tabela antes de colocar position sticky para o titulo.
+    }
+    
+    position: sticky; ---  sticky significa colocado, color
+    top: -1px; -- usando top, o titulo cola no topo (-1px foi usado por conta de um espaçamento do topo da view port da tela.)
+    background-color: gray; -- muda a cor de fundo da tebela 
+  
+  Deixa o titulo da tabela fixado quando a tela for rolada
+usando o positon sticky e top --
+
+-----------------------------------------------------------
+---------------------------------------------
+-------------------------------
+---------------------
+--------
+
+MESCLAGEM DE CELULAS EM TABELAS --
+
+  Exemplo:
+    
+    colspan="1"
+      Faz com que a celula cresça uma coluna para frente
+
+    rowspan="1"
+      Faz com que a celula cresça para baixo
+
+EXEMPLO na pasta do exercicio (007) - documento (007-3.html);

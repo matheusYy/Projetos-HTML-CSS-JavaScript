@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelas</title>
+<style>
+  table {
+    width: 500px;
+    height: 300px;
+  }
+  td {
+    border: 1px solid black;
+    padding: 4px;
+    text-align: right; /*Alinhamento, center, left e right -- por padão é left*/  
+    vertical-align: bottom; /*top, middle, bottom -- por padão é middle, meio*/
+  }
+.line-one {
+  background-color: grey;
+}
+.position {
+  text-align: right;
+  vertical-align: top;
+  color: red;
+  background-color: black;
+}
+
+</style>
+
+</head>
+<body>
+
+  <main>
+    <table>
+      <tr class="line-one">
+        <td class="position">A1</td> 
+        <td class="position">B1</td>
+        <td>C1</td>
+      </tr>
+      <tr>
+        <td class="position">A2</td>
+        <td>B2</td>
+        <td>C2</td>
+      </tr>
+      <tr>
+        <td>A3</td>
+        <td>B3</td>
+        <td class="position">C3</td>
+      </tr>
+    </table>
+    <p>Os itens em vermelho e preto são os conteúdos com classes de posicionamento nos "TD"</p>
+  </main>
+
+</body>
+</html>
