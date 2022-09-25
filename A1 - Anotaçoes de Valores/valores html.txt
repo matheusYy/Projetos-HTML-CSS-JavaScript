@@ -4,5 +4,5 @@ Algumas anotaçoes que eu achei importante resalatar mais uma vez
   px = pixels
   vh = view heigth -- altura visivel da sua tela 
   vw = view width -- largura visivel da sua tela
-  % = porcentagem, varia do tamanho do objeto e é adaotavel
+  % = porcentagem, varia do tamanho do objeto e é adaptavel
   

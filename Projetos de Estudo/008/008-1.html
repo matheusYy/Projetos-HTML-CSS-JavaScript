@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio Tabelas</title>
+<style>
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  table {
+    background-color: rgb(230, 230, 230);
+    border-collapse: collapse;
+    width: 650px;
+  }
+  th, td {
+    border: 1px solid rgb(36, 36, 36);
+    padding: 10px;
+  }
+  .io-exata {
+    background-color: rgb(77, 119, 119);
+    color: white;
+    font-weight: 900;
+  }
+  table > thead {
+    background-color: rgb(77, 119, 119); 
+    color: white;
+  }
+    col.io-area {
+    color: red;
+    background-color: rgb(255, 145, 0);
+  }
+
+  .io-exata2 {
+    background-color: rgb(53, 80, 80); 
+    color: white;
+  }
+</style>
+
+
+</head>
+<body>
+ 
+<main>
+  <colgroup>
+    <col class="io-area" span="2">
+  </colgroup>
+  <table>
+    <thead>
+      <tr>
+        <th rowspan="2" scope="col" class="io-exata2">Área</th>
+        <th colspan="3" rowspan="2" scope="col">Disciplinas</th>
+        <th colspan="2" scope="colgroup">Notas</th>
+        <th rowspan="2" scope="col">Media</th>
+      </tr>
+      </td>
+        <th scope="col">Nota 1</th>
+        <th scope="col">Nota 2</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <tr>
+        <th rowspan="5" scope="rowgroup" class="io-exata2">Exata</th>
+        <td colspan="3">Matematica</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr>
+        <td colspan="3">Física</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr class="not">
+        <td colspan="3">Quimica</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr class="not">
+        <td colspan="3">Biologia</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr class="io-exata">
+   
+        <td colspan="5">Medias Exatas</td>
+        <td>0.0</td>
+      </tr>
+      <tr>
+        <th rowspan="3" scope="rowgroup" class="io-exata2">Humanas</th>
+        <td colspan="3">História</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr>
+        <td colspan="3">Geografia</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr>
+        <td colspan="5" class="io-exata">Média das Humanas</td>
+        <td class="io-exata">0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</main>
+
+</body>
+</html>

@@ -178,3 +178,45 @@ MESCLAGEM DE CELULAS EM TABELAS --
       Faz com que a celula cresça para baixo
 
 EXEMPLO na pasta do exercicio (007) - documento (007-3.html);
+
+
+
+
+SELECIONAR COLUNAS DAS TABELAS
+
+em table na nova html5 é possivel usar, "colgrup"
+  exemplo:
+
+    <table> 
+      <colgrup>
+        <col1>
+        <col2>
+        <col3>
+      </colgrup>
+
+Usando isso em na tabela é possivel selecionar uma coluna inteira na tabela
+
+---------------------------------------------------------------
+-0--------------------------------------------
+-----------------------------
+----------
+
+Se for em uma tela menor é possivel deixar a tabela com scrool
+
+  .container {
+  overflow-x: auto;
+}
+
+overflow -- significa coisa que trasborda, conteudo que trasborda
+
+existe varios tipo de overflow
+
+overflow-x
+overflow-y
+
+etc....
+
+Exemplo no exercicio, 008 - TabelaResponsiva ----
+------------------------
+
+FIM DO EXERCICIOS SOBRE TABELAS
