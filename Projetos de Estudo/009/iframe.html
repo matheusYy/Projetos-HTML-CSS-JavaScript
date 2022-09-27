@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iframe</title>
+
+<style>
+  iframe {
+    width: 500px;
+    height: 600px; 
+    border: 2px solid black;
+    /*Configuraçoes de tamanho, 
+    
+    Estilos de css são superiores as feitas direto no iframe, então se existir duas configuraçoes uma em css e a outra direto no iframe, a do css será usada em vez da outra
+
+    existem alguns valores como, 'scolling' que cria a barra de rolagem
+
+    scolling: auto - padrão, cria a barra de rolagem
+    scolling: yes -- mesmo que  o conteúdo esteja cabendo no iframe ele mostra a barra de rolagem
+    scolling: no -- Mesmo que o conteudo seja maior ele não deixa aparecer a barra de rolagem, mas o google chrome não funciona 
+    -----------------------------------------
+
+    frameborder pode ser substituido por 'border'
+    ele pode ser apagado da configuraçao padrão do iframe 
+    da mesmo fora que foi feita a cima
+    */
+  }
+</style>
+
+</head>
+<body>
+
+  <h1>Testando o uso do iframe</h1>
+
+  <p>teste <a href="#">aqui</a></p>
+  <iframe src="#" frameborder="0"></iframe>
+  <!--Alguns sites como: google, youtube; não podem ser abertos em iframe-->
+  <iframe src="http://google.com" frameborder="0">
+    <a href="#" target="_blank">Curso em video</a>
+  </iframe>
+<!--Iframe por padrão tem um tamanho de 300x150-->
+  </body>
+</html>

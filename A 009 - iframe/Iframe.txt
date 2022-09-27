@@ -1,0 +1,50 @@
+Configuraçoes de tamanho 
+    
+    Estilos de css são superiroes as feitas direto no iframe, então se existir duas configuraçoes uma em css e a outra direto no iframe, a do css será usada em vez da outra
+
+    existem alguns valores como, 'scolling' que cria a barra de rolagem
+
+    scolling: auto -- cria uma barra de rolagem
+    scolling: yes -- mesmo que  o conteúdo esteja cabendo no iframe ele mostra a barra de rolagem
+    scolling: no -- Mesmo que o conteudo seja maior ele não deixa aparecer a barra de rolagem, mas o google chrome não funciona 
+    -----------------------------------------
+
+    frameborder pode ser substituido por 'border'
+    ele pode ser apagado da configuraçao padrão do iframe 
+    da mesmo fora que foi feita a cima
+  
+  EXEMPLO NO EXERCICIO (009/iframe.httml)
+
+ <iframe src="http://google.com" frameborder="0">
+   -- Caso a url que está no iframe não for compativel a ancora será a url    
+   <a href="#" target="_blank">Curso em video</a>
+   também é possível usar paragrafos 
+  </iframe>
+
+  Dando nomes aos iframes -- isso pode ser usado para criar ancoras para o iframe 
+
+  name="frame"
+
+  name pode ser usado para localizar o iframe na ancora "a"
+  
+   Exemplo:
+      <li><a href="../008/008.html" target="frame">Primeira pagina</a></li>
+      <li><a href="../007/007.html" target="frame">Segunda Pagina</a></li>
+      <li><a href="../005/005.html" target="frame">Terceira Pagina</a></li>
+      
+    <iframe src="" frameborder="0" width="95%" height="300px" name="frame"
+A iframe tem o "name" (frame) e assim você pode clicar na ancora e a pagina que estiver na ancora "a" será mandado para o iframe
+
+srcdoc -- você pode criar um site simples dentro do iframe, mas caso queira algo mais avançado a melhor opçao é criar uma pagina de fora e criar uma ancora na url padrão do iframe (A PAGINA SÓ SERÁ MOSTRADA UMA VEZ)
+
+IMPORTANTE
+
+  Se em seu site você ultilizar iframe ancorar outra pagina usando iframe pode 
+  deixa o site aberto a ultilizar ataques em seus sites 
+
+  Se você usa um site que foi invadido e este site está usando tecnicas de captura de dados nesse mesmo site que está sendo usado no seu iframe, o seu site também irá fazer isso por conta da ancora criada que é como se você tivesse criado uma nova guia mas na mesma pagina ques está o seu site com o iframe
+
+SABDOX -- usando sandbox no iframe você consegue fazer algumas configuraçoes de segurança
+
+Estudar melhor sobre depois
+
