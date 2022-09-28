@@ -1,0 +1,33 @@
+Sobre input:
+form, sempre deve ser usado em formularios e contem algumas configuraçoes.
+  exemplos:
+    <form autocomplete="off" action="cadastro.php">
+
+    autocomplete -- ao escrever algo no formulario, mostra algumas opçoes para completar automaticamente o formulario
+
+    action --  seria um comando para chamar uma linguagem de progamaçao, como php
+
+
+label -- etiqueta para formularios, como sempre, ele é extremamente importante para formularios       
+
+
+
+Existem dois metodos para envio de formularios de forma simples
+
+GET ou POST
+
+GET -- Padrão, ele mostra os dados na url (como quando você faz uma pesquisa no google)
+POST -- Os dados não sãp mostrados na url mas ele pode ser visto se o site for "inspecionado"
+
+os dois não protegem os dados, apenas não mostra de forma escancarada para o usuario, para realmente proteger os dados eles teriam que ser criptografados usando "https" (por enquanto não é necessario estudar) 
+
+O metodo de GET, apenas envia dados em até 3 mil bytes que é aproximadamente 3 mil letras
+  GET não é recomendado para envio de dados sensiveis, como senhas, numero de cartão de credito, fotos, endereços
+  ou envio de qualquer coisa no geral
+
+POST se for maior que 3 mil bytes POST pode ser usado, e se for para enviar algo POST é recomendado
+mas para segurança como dados de cartão a segurança do tipo 'http' é recomendado que é o oposto de GET
+e se você quiser se os dados não sejam mostrado na url
+
+
+
