@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <legend>Sexo</legend>
+      <label for="masc">Masculino</label>  <!--Botoes de radio no caso para todos não serem selecionados eles devem ter o mesmo name para estarem relacionados e asssim podendo ser marcado apenas um, isso não serve para ID e NÃO serve para checkbox-->
+        <input type="radio" name="sexo" id="masc" checked value="M"> <br> <!--checked significada deixa marcado por padrão-->
+      <label for="fem">Feminino<label>
+        <input type="radio" name="sexo" id="fem" value="F">
+    </fieldset>
+    <fieldset>
+      <legend>Esportes</legend>
+      <label for="selc">Futubol</label>
+        <input type="checkbox" name="check" id="selc" checked> <br>
+      <label for="selc1">Box</label>
+        <input type="checkbox" name="check" id="selc1"> <br>
+      <label for="selc2">Skate</label>
+        <input type="checkbox" name="check" id="selc2"> <br>
+    </fieldset>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Reset">
+    </form>
+
+
+</body>
+</html>

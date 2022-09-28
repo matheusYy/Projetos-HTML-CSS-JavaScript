@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Telefone</title>
+</head>
+<body>
+  
+  <form action="" method="post" autocomplete="on">
+    <fieldset> <!--Fieldset coloca uma borda em volta do form e faz um agrupamento de dados que pode ser util util para separar dados e temas de input diferentes-->
+      <legend>Cadastrais</legend> <!--Legend coloca uma text em volta da borda do fieldset-->
+      <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="seu email" autocomplete="email" autofocus required>
+      <label for="fone">Telefone</label>
+        <input type="tel" name="tel" id="fone" autocomplete="tel" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx) xxx-xxx">
+      <input type="submit" value="enviar">
+      <input type="reset" value="reset">
+    </fieldset>
+    <!--pattern é algo para estudar sobre, é um tipo de validaçao de dados mas não tão bom quanto javascrip e e php-->
+  </form>
+
+</body>
+</html>
