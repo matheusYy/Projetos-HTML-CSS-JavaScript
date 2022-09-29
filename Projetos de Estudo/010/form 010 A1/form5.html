@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="" method="post">
+    <fieldset>
+      <legend>Estados</legend>
+      <label for="estado">Estado</label>
+      <select name="estados" id="estado">
+        <option value="select">-- Escolha --</option> 
+        <!--Select faz uma lista de coisas para o usuario selecionar, normalmente contem coisas sobre estado ou profissoes
+        optgrup -- cria um titulo dentro de cada option podendo oque cada coluna representa-->
+        <optgroup label="Região 1">
+          <option value="MG">Mato Grosso</option>
+          <option value="RJ">Rio de Janeiro</option>
+        </optgroup>
+        <optgroup label="Região 2">
+          <option value="SP">São Paulo</option>
+        </optgroup>
+        
+        
+      </select>
+      <label for="inp">Profissão</label>
+        <input type="text" name="profissão" id="inp" list="data1">
+        <datalist id="data1">
+          <option>Administrador</option>
+          <option>Professor</option>
+          <option value="Programador">Programador</option>
+        </datalist >
+        <!--Datalist cria uma caixa de texto que pode conter caixas padroes de recomendaçao para o usuario e e as datalist recomendam coisas que já foram digitadas para o usuario, como a sua profissão ou algo algo assim-->
+        <input type="submit" value="Enviar">
+    </fieldset>
+  
+    <label for="msg">Mensagem</label>
+    <textarea name="name" id="msg" cols="37" rows="15" placeholder="Escreva seu comentario aqui" minlength="10" maxlength="450"></textarea>
+  <!--Textarwa com o o nomwe já diz faz uma caixa de texto para o usuario digitar algo, pode ser configurada de forma padrão o seu tamanho e e placeholder maximo de mesngens que podem ser escritas ou o minimo de mesnsagens que podem ser escritas-->
+  
+  </form>
+
+      </body>  
+</html>

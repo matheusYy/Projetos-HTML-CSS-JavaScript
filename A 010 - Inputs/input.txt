@@ -97,3 +97,24 @@ Botoes de checked, podem ter varias opçoes de marcaçao e não apenas uma igual
         <input type="checkbox" name="check" id="selc1"> <br>
       <label for="selc2">Skate</label>
         <input type="checkbox" name="check" id="selc2"> <br>
+
+Alguns outros inputs
+
+<label for="cor">Cores</label>
+    <input type="color" name="cor" id="cor"> <br>
+ <label for="rag">Range</label>
+     <input type="range" name="range" id="rag" min="1" max="100" value="10">
+  <label for="file">File</label>
+      <input type="file" name="file" id="file">
+
+
+Input:color -- o usuario pode escolher varias cores no espectro de cores
+
+Input:range -- um medidor de satisfaçao que pode ser configurado com max e min, value deixa um valor padrâo a caixa range
+
+Input:file -- Input para o usuario enviar arquivos, apenas com o metodo POST para enviar os arquivos
+
+ALGUNS ELEMENTOS FORA DO INPUT 
+
+  exemplos:
+  
