@@ -1,0 +1,20 @@
+Anotaçoes sobre mediaQuery
+ Exemplos de MediaType:
+
+    Media="all" -- essa configuraçoes servem para todos os dispositivos para todo o tipo de media 
+    
+    Media="screen" -- Esse é um tipo de media type 
+
+  Exemplos de Media Features:
+
+    Media="screen and (orientation: portrait)" --- essa confiuguraçao seria para todas as telas com orientaçao de retrato (em pé)
+
+    Media="screen adn (orientation: landscape)" --- essa configuraçao seria para todas as telas com orientaçao paisagem (deitado)
+----------------------------------------------------------------
+------------------------
+------
+  Quando é usado media, pode ser usado media type, (all, screen, print) e tambem Media Features que são as configuraçoes entre parenteses
+
+  Media Features são indicadas com uso de parenteses separadamente, se existem 3 medias Features será necessario 3 parenteses
+
+  Media Type não tem parenteses

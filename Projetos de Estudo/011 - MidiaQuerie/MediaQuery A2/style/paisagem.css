@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/*Para todos os tipos de Media Retratos*/
+
+body {
+  background-image: url(../../img/imagens/cev-landscape.jpg);
+  background-position: center bottom;
+}
