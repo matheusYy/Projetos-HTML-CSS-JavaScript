@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Document</title>
+<style>
+ 
+ @charset "UTF-8";
+/*Esse exemplo com todas as configuraçoes de MediaQuery no html, é meio bangunçado na minha opiniao atual mas pode ser um exemplo util que tambem é possivel de ser feito, mas ainda recomendo para meu eu do futuro que irá fazer dessa maneira mas é bom ressaltar, faça em styles diferentes fica mais organizado e profissional*/
+  /*Para todos os tipos de Media*/
+
+  * {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  html, body {
+    width: 100vh;
+    height: 100vh;
+    background-color: #233eff;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  h1 {
+    color: white;
+    text-shadow: 2px 2px 0px #1526a7;
+    
+  }
+
+  /*Declaraçoes de retrato*/
+  @media screen and (orientation: portrait) {
+  body {
+  background-image: url(../img/imagens/cev-portrait.jpg);
+  background-position: center left;
+  }
+}
+
+  /*Declaraçoes de paisagem*/
+  @media screen and (orientation: landscape)  {
+  body {
+  background-image: url(../img/imagens/cev-landscape.jpg);
+  background-position: center bottom;
+  }
+}
+
+</style>
+</head>
+<body>
+  
+</body>
+</html>

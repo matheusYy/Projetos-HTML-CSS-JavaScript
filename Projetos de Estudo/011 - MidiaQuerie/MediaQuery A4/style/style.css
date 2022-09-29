@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/*Toda as Medias*/
+
+/* Typical Device BreakPoints: (  
+{
+Pequenas Telas: {
+
+  Celular
+  Tablet
+  Desktop
+}
+Grandes Telas: {
+
+}
+}
+)
+*/
+
+
+
+h1 {
+  color: red;
+}
