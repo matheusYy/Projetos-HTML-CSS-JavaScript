@@ -2,33 +2,53 @@ Anotaçoes sobre mediaQuery
 
 PESQUISAR SOBRE IMPORTANTE: ( 
 {
-  
-}
+  Typical Device BreakPoints: Que seriam os tamanhos recomendados para as telas de cada dispositivel
 
+A ORDEM DAS CSS SÃO IMPORTANTES -- Estudar sobre depois, o posicionameto da css com a Media="all" em baixo, deu erro nas configuraçoes das outras MediaQueries, ela ficava sobrepondo as outras 
+}
+  MobileFirt: Seria começar pelo mobile, montar o site pensando em dispositivos mobile primeiro e depois ir adicionando coisas para os outros dispositivos
+  ]
 )
 
- Exemplos de MediaType:
+ Exemplos de MediaType: {
+  (Exemplo:
 
     Media="all" -- essa configuraçoes servem para todos os dispositivos para todo o tipo de media 
     
     Media="screen" -- Esse é um tipo de media type 
+)}
 
-  Exemplos de Media Features:
+  Exemplos de Media Features: {
+    (Exemplo:
 
     Media="screen and (orientation: portrait)" --- essa confiuguraçao seria para todas as telas com orientaçao de retrato (em pé)
 
-    Media="screen adn (orientation: landscape)" --- essa configuraçao seria para todas as telas com orientaçao paisagem (deitado)
-----------------------------------------------------------------
-------------------------
-------
+    Media="screen and (orientation: landscape)" --- essa configuraçao seria para todas as telas com orientaçao paisagem (deitado)
+)}
+Observaçoes {
+  ( ---
   Quando é usado media, pode ser usado media type, (all, screen, print) e tambem Media Features que são as configuraçoes entre parenteses
 
   Media Features são indicadas com uso de parenteses separadamente, se existem 3 medias Features será necessario 3 parenteses
 
   Media Type não tem parenteses
+)}
 
+Teoria: {
+  (
 Teoria dos MobileFirst -- (Foi Escrito rápido, corrigir algumas coisas depois )
 
   Segundo "Roubrusc" (está errado nome corrigir depois) usando essa tecnica você consegue algumas facilidades em se site, como facilidade na divulgaçao, o algoritimo do google vai dar mais valor se o seu site for pensado em mobile firt e você ganha alguns pontos no google e em até alguns outros mecanismos de busca, não é nenhuma magica ou alguma tecnica secreta, isso acontece por que na grande maioria das pessoas que não tem um pc ou algo tipo acessa com o celular, em paises como africa que a internet é bem ruim por exemplo, os mecanismos de busca valorizam o site com MobileFirst por conta do nivel de satisfaçao do usuario do site que em sua grande maioria é mobile
 
-  Sites moveis são mais leves para facilitar a exoeriencia para o usuario, MobileFirst facilita a vida de todos e é bem valorizada 
+  Sites moveis são mais leves para facilitar a exoeriencia para o usuario, MobileFirst facilita a vida de todos e é bem valorizada
+)}
+
+  Configuraçao para DeviceBreakPoints {
+    (Exemplo:
+ 
+    @media screen and (min-width: 768px) and (max-width: 1050px) {
+      body {
+        background-color: blue;
+      }
+    }
+  )} 

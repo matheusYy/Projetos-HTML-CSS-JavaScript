@@ -45,3 +45,7 @@ p {
 #pc { display: none;}
 #tv { display: none;}
 
+#vs-mob { display: block;}
+#vs-tab {display: none;}
+#vs-desk {display: none;}
+#vs-tv {display: none;}

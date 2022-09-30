@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/*Toda as Medias*/
+
+/* Typical Device BreakPoints: (  
+{
+Pequenas Telas: {
+
+  Celular
+  Tablet
+  Desktop
+}
+Grandes Telas: {
+
+}
+}
+)
+*/
+@media print { /*Media para impressoras*/
+  body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em; 
+    color: black;
+  }
+  h1 {
+    font-size: 1.4eme;
+    color: black;
+    text-shadow: none;
+  }
+  main {
+    border: 2px solid black;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1050px) { 
+/*Media para tablet*/
+  body {
+    background-image: url(../img/imagens/back-tablet.jpg);
+  }
+  #phone { display: none;}
+  #tablet { display: block; margin: auto;}
+  #impressora { display: none}
+  #pc { display: none;}
+  #tv { display: none;}
+
+  #vs-mob { display: none;}
+  #vs-tab {display: block;}
+  p {
+    color: black;
+  }
+  h1 {
+    color: white;
+  }
+  main {
+    width: 70vw;
+    height: 60vh;
+    background-color: rgba(69, 82, 93, 0.165);
+  }
+}
+@media screen and (min-width: 1050px) and (max-width: 1700px) {
+/*Media para desktop*/  
+  body {
+    background-image: url(../img/imagens/back-pc.jpg);
+  }
+  p {
+    color: black;
+  }
+  h1 {
+    color: white;
+  }
+
+  #phone {display: none;}
+  #pc { display: block; margin: auto;}
+
+  #vs-mob { display: none;}
+  #vs-desk {display: block;}
+}
+@media screen and (min-width: 1700px) {
+/*media para tv (Infelismente não podemos testar, mas com certeza funciona)*/  
+  body {
+    background-image: url(../img/imagens/back-tv.jpg);
+  }
+  
+  #phone {display: none;}
+  #tv { display: block; margin: auto;}
+
+  #vs-mob { display: none;}
+  #vs-tv {display: block;}
+}
