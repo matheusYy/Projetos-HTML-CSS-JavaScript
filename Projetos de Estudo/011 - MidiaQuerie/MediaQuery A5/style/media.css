@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px ) {
+  #burg {
+    display: none;
+  }
+  menu {
+    display: block;
+  }
+}

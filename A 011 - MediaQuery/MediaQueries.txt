@@ -52,3 +52,14 @@ Teoria dos MobileFirst -- (Foi Escrito rápido, corrigir algumas coisas depois )
       }
     }
   )} 
+
+
+Anotaçoes sobre o projeto A5 { 
+  ( Pequanas anotaçoes sobre a lógica usada no JavaScript usada nesse projeto.
+
+As funçoes onclick() dão ao menu display block automaticamente quando o menu é tocado, por padrão no css o display é "none" existe um "if" testando qual display está no momento ao clicar, se for block = recebe none se for none = recebe block
+
+Na Função abaixo testa quando a largura do width for 768pxs ou maior se o display for none = recebe block se o display for abaixo de 768px ele recebe none que é o padrão do menu hamburguer
+
+)
+}

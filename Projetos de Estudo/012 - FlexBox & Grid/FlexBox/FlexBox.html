@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexBox</title>
+  
+  <style>
+  .container {
+    background-color: rgb(73, 73, 73);
+    width: 90vw;
+    padding: 15px;
+    height: 40vh;
+
+    display: flex;
+    flex-flow: row;
+   /* flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-around; /*justify-content -- define como o navegador mosra os espaçamentos dos itens*/
+    justify-content: center;
+     /*o elemento não deve ter uma altura pré definida para essa configuraçao funcionar*/
+    align-items: stretch;
+   gap: 0px 10px; 
+  }
+  .container-2 {
+    background-color:  rgb(73, 73, 73); 
+    width: 98vw;
+    height: 38vh;
+    display: flex;
+    flex-flow: row wrap;
+    align-content:  center; /*alinha os filhos em mais de uma linha*/
+    align-items: center; /*eixo secundario o cross vertical*/
+    justify-content: center; /*eixo principal horizontal*/
+    gap: 10px 40px;
+    
+    /* row-gap: 30px;
+    column-gap: 10px;  crtl + k + c atalho para comentar automaticamente e crtl + k + u descomenta*/
+  
+  }
+  .box-1 {
+    width: 70px;
+   flex-grow: 0;
+
+  
+  }
+  p {
+    color: white;
+  }
+  div {
+    width: 70px;
+    border-radius: 10px;
+    margin: 5px;
+  }
+  #d1 {
+    
+    background-color: rgb(0, 221, 255); 
+    /*order: 0; /*Muda a ordem do filho, podendo jogar ele pro final, o order muda apenas visualmente as posiçoes do filho mas no DOM ele continua no mesmo lugar podendo ter uma dificuldade visual
+    e isso afeta usuarios com baixa visão como um leitor de tela se a ordem css for importante pode afetar os leitores de tela*/
+
+  }
+  #d2 {
+
+    background-color: rgb(255, 111, 0);
+    
+  }
+  
+  #d3 {
+    background-color: blueviolet;
+  }
+
+  #d4 {
+    background-color: chartreuse;
+  }
+  #d5 {
+    background-color: rgb(0, 106, 255);
+    height: 50px;  
+  }
+  #d6 {
+    background-color: rgb(255, 140, 0);
+    height: 50px;
+
+  }
+  #d7 {
+    background-color: rgb(255, 0, 128);
+    height: 50px;
+  }
+  #d8 {
+    background-color: rgb(0, 255, 76);
+    height: 50px;
+  }
+  .box-9 {
+    background-color: crimson;
+    width: 40x;
+    height: 40px;
+  }
+
+.container-3 {
+  background-color: rgb(57, 57, 57);
+  width: 95vw;
+  height: 500px;
+  margin: 5px;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.box-2 {
+  background-color: rgb(179, 224, 224);
+  width: 170px;
+  height: 170px;
+  border-radius: 10px;
+  text-align: center;
+
+
+}
+
+.b-1 {
+  background-color: darkmagenta;
+  order: 2;
+  flex-grow: 0; /*Pega o tamanho total do elemento ao lado subtrai o valor padrao e adicionar no tamanho toal*/
+  flex-shrink: 1; /*o inverso de grow, pega o tamanho total subtrai o valor total do elemento e o valor será o quanto ele vai diminuir */
+
+}
+
+.b-2 {
+  background-color: rgb(139, 0, 0);
+  order: 3;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+.b-3 {
+  background-color: rgb(72, 166, 247);
+  order: 2; /*muda as ordem de precedencia do display*/
+  flex-grow: 1; /* Flex glow aumenta o tamanho relativo de cada item, */
+  flex-shrink: 1;
+}
+
+.container-4 {
+  background-color: rgb(5, 3, 44);
+  width: 90vw;
+  height: 50vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px 10px;
+  }
+  .box-3 {
+    color: white;
+    text-align: center;
+  
+  }
+  .b-4 {
+    background-color: rgb(240, 173, 90);
+    /* flex-grow: 0;
+    flex-basis: 200px; */
+    flex: 3 1 20px;
+  }
+  .b-5 {
+    background-color: rgb(155, 201, 201);
+    /* flex-grow: 0;
+    flex-basis: 300px; */
+    flex: 3 1 300px;
+    align-self: flex-start;
+
+  }
+  .b-6 {
+    background-color: rgb(235, 165, 240);
+    /* flex-grow: 0;
+    flex-basis: 200px; */
+    flex: 2 1 100px; /**atalho para flex-grow flex-shirink e flex-base*/
+    align-self: flex-end; /**alinha um unico filho */
+  }
+</style>
+
+
+</head>
+<body>
+  
+<div class="container">
+  <p>Exemplo 1 </p>
+  <div id="d1"></div>
+  <div id="d2"></div>
+  <div id="d3"></div>
+  <div id="d4"></div>
+</div>
+
+
+
+
+<div class="container-2">
+  <div id="d5" class="box-1"></div>
+  <div id="d6" class="box-1"></div>
+  <div id="d7" class="box-1"></div>
+  <div id="d8" class="box-1"></div>
+  <div class="box-1 box-9" ></div>
+  <div class="box-1 box-9" ></div>
+  <div class="box-1 box-9" ></div>
+</div>
+
+<div class="container-3">
+  <div class="box-2 b-1">A1</div>
+  <div class="box-2 b-2">A2</div>
+  <div class="box-2 b-3">A3</div>
+
+</div>
+
+<div class="container-4">
+  <div class="box-3 b-4">A1</div>
+  <div class="box-3 b-5">JIDJIWJEIJIWJEIWJ</div>
+  <div class="box-3 b-6">A3</div>
+
+</div>
+
+</body>
+</html>

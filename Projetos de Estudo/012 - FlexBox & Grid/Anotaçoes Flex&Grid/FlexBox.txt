@@ -1,0 +1,149 @@
+FlexBox { 
+  (Algumas anotaçoes importantes sobre a tecnica FlexBox
+
+    Estudar sobre o marcador ":nth()" ele é otimo para selecionar itens especificos
+
+Alinhar o grupo de filhos { 
+( Comandos principais para alinhar os filhos
+
+    flex-direction -- alinhar no eixo principal
+
+Mudar os eixos { muda os eixos main e cross  
+    justify-content -- alinha os filhos no eixo principal
+    align-items -- alinha no eixo secundario o cross
+    
+    row-gap -- distancia entre linhas ou seja se conter elementos a baixo, a linha de separaçao será o valor colocado
+    
+    column-gap -- distancia entre colunas 
+    gap -- forma mais rapida de escrever todos os gap, (primeiro valor row, segundo column)
+
+Propriedades para os filhos { 
+  ( exemplos:
+
+      flex-grow -- aumenta o tamanho dos items de forma relativa
+      flex-shirink -- diminui os itens de forma relativa
+      flex-basis -- tem varias propriedades como "auto", serve para aumenta o tamanho do elemento, pode ser valores exatos em px
+
+      flex -- atalho para todos esses valores começando com grow depis shirink e no fim basis
+
+      align-self -- alinha o item filho em especifico em outra posiçao
+}
+}
+    
+    
+    flex-wrap -- especifica se os itens vão quebrar linha ou não, de padrãon é nowrap
+    align-content -- alinha os filhos junto com os filhos que quebraram linha 
+}
+
+
+
+
+Noçoes basicas do modelo Flex { 
+  ( ---
+
+ao colocar o valor de alinhamento principal seja no eixo horizontal que vem de padrão ou vertical
+
+os valores justify -- alinha os item no eixo principal
+e os align-items - no eixo secundario o cross
+
+os valores em column ficam invertidos 
+
+axis -- Em ingles para portugues "axis" significa "eixo"
+
+  main axis -- eixo que corre no eixo horizontal (esquerda para direita ou vice versa) contendo todos os itens seja em baixo ou em cima
+
+      main start -- inicio do eixo main
+      main end -- final do eixo main
+
+  cross axis -- eixo principal que corre na vertical (de cima para baixo ou vice versa) 
+
+      cross start -- inicio do eixo vertical (topo)
+      cross end -- final do eixo vertical (baixo)
+
+  main size -- largura do elemento filho (horizontal)
+  cross size -- altura do elemento filho (vertical)
+
+)
+}
+
+Anotaçoes sobre os exemplos: {
+  ( IMPORTANTE
+
+    display: flex; --  Display especial para deixar o container flex
+
+    flex-direction: row; -- Guia a direçao do container seja em linha ou coluna
+
+    flex-direction -- contem: row linha, colunm coluna, ou o reverse dos dois -- row-reverse, colunm-reverse
+
+    flex-wrap: wrap; -- Configuraçao se vai haver quebra de linha ou se os itens serão compactados
+
+    flex-wrap -- não vi todas as configuraçoes mas -- wrap = vai ter quebra de linha, nowwrap = itens serão compactados 
+
+    flex-flow -- uma abreviaçao de flex-direction e flex-wrap, os mesmo valores começando pela direçao do flex
+    ---------
+
+    flex-grow: 1; -- define o fator de crescimento do tamanho no eixo main (principal) não em um eixo cross
+    depende da quantidade de itens filhos e largura disponivel etc..
+
+    flex-shirink: 2; -- define o fator de reduçao de um item 
+
+    flex-basis: 200px; -- define o tamanho principal de um item
+
+    Existe uma abreviaçao para os 3 itens, "flex:"
+
+----------
+Align-items { 
+  (itens de alinhamento
+    align-items: streech; estica os items na direçao total (IMPORTANTE -- o elemento não deve ter uma altura pré definida para isso funcionar senão a Configuraçao será ignorada)
+   
+    align-items: flex-start; -- estabelece valor align-self em todos os elementos filhos
+
+    align-content: flex-end; -- alinha todos os filhos do container
+
+    align-self: center; -- alinha algum filho especifico 
+
+)
+}
+
+
+
+Justify-content: {
+  ( justificar-conteudo --- define como o navegador distribui o espaço entre e ao redor dos itens do conteúdo ao longo do eixo main (principal)
+
+  justify-content: start;
+  justify-content: center;
+  justify-content: space-between; -- espaço entre os itens
+  justify-content: space-around; -- espaço em volta
+  justify-content: space-evenly; - espaço em volta mas o item do meio fica no centro
+)
+}
+
+  
+Ordenaçao dos elementos flex { 
+  (
+
+
+
+)
+}
+
+
+  
+  Existem o container que seria o elemento pai, oque teria as configuraçoes especiais de "display: flex"
+
+.container {
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap; 
+ou  
+  flex-flow: row wrap;
+}
+.filho {
+  flex: 1; // define quanto cada elemento no eixo "main" principal vai ter de tamanho (depende da quantidade 
+    de itens é )
+
+flex
+}
+
+)
+} 

@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 726px) and (max-width: 1027px) {
+body {
+  background-image: url(../img/img-fundo-big.jpg);
+  background-size: cover;
+}
+.box-field {
+  max-width: 400px;
+  height: 230px;
+}
+ input{ padding: 18px 160px 1px 0px;
+  margin: 4px 3px 3px 22px;
+ }
+ .submitone {
+  margin-left: 75px;
+ }
+ a {
+  left: 54%;
+  top: 45%;
+ }
+ .paragrafo-login {
+  top: 65%;
+  font-size: 1.1em;
+  width: 500px;
+ }
+ .paragrafo-login2 {
+    top: 55%;
+    font-size: 1.1em;
+    width: 500px;
+  }
+::placeholder {
+  font-size: 1.2em;
+}
+}
+
+
+@media screen and (min-width: 1010px) {
+  body {
+    background-image: url(../img/img-fundo-big.jpg);
+    background-size: cover;
+  }
+  .box-field {
+    max-width: 400px;
+    height: 230px;
+  }
+   input{ padding: 18px 160px 1px 0px;
+    margin: 4px 3px 3px 22px;
+   }
+   .submitone {
+    margin-left: 75px;
+   }
+   a {
+    left: 51%;
+    top: 45%;
+   }
+   .paragrafo-login {
+    top: 65%;
+    left: 31%;
+    font-size: 1.1em;
+    width: 500px;
+   }
+   .paragrafo-login2 {
+      top: 55%;
+      left: 31%;
+      font-size: 1.1em;
+      width: 500px;
+    }
+  ::placeholder {
+    font-size: 1.2em;
+  }
+  #login {
+    left: 47%;
+    top: 6%;
+  }
+  }

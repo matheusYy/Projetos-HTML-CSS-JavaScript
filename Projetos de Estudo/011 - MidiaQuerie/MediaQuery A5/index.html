@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu Responsivo</title>
   <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/media.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 </head>
-<body>
+<body onresize="mudouTamnho()"> <!--funçao mudou de tamanho usando onresize-->
   <header>
     <h1>Aqui o Site</h1>
     <span id="burg" class="material-symbols-outlined" onclick="Menu()">
@@ -34,6 +35,15 @@
   </main>
   
   <script>
+
+    function mudouTamnho() { //Funçao para quando a tela estiver em um tamanho especifico
+      if (window.innerWidth >= 768) { //testa a largura da tela
+        itens.style.display = 'block'
+      } else {
+        itens.style.display = 'none'
+      }
+    }
+
     function Menu() {
       if (itens.style.display == 'none') {
        itens.style.display = 'block'
