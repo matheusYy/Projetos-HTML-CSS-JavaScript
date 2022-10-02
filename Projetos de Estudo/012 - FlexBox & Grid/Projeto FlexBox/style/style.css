@@ -12,12 +12,11 @@
   justify-content: space-around;
   align-items: center;
   background-color: rgb(255, 240, 126);
-  box-shadow: 1px 1px 1px black;
-  height: 9vh;
+  height: 9vh; 
  }
  .menu-list {
   display: flex;
-
+ 
  }
 .menu-list li {
   letter-spacing: 0.4px;
@@ -35,15 +34,22 @@
 }
 .mobile-menu {
  display: flex;
+ padding: 5px;
+ border-radius: 50%;
+}
+.mobile-menu:hover {
+  background-color: rgb(255, 251, 166);
 }
 .display-menu-mobile {
   display: block;
   position: absolute;
   left: 60vw;
-  top: 9vh;
+  top: 19vh;
   width: 40vw;
-  height: 50vh;
-  background-color: black;
+  height: 68vh;
+  background-image: linear-gradient(to bottom, rgb(255, 240, 126), rgb(255, 255, 154), rgba(246, 255, 162, 0.856));
+  border-top: 0px;
+  border-radius: 30px 0px 0px 30px;
   transform: translate();
 }
 body {
