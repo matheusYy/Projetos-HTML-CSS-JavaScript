@@ -6,7 +6,15 @@
   text-decoration: none;
   list-style-type: none;
  }
-
+.icon-em {
+  text-transform: uppercase;
+  color: #bd4c00;
+  text-decoration:underline;
+}
+.icon-em:hover {
+  color: #ff5900dd;
+  transition: color .3s;
+}
  .menu {
   display: flex;
   justify-content: space-around;
@@ -28,9 +36,9 @@
 
 }
 .menu-list a:hover {
-  color: rgb(172, 6, 6);
+  color: #ff5900dd;
   text-decoration: revert;
-
+  transition: color .3s;
 }
 .mobile-menu {
  display: flex;
@@ -38,10 +46,10 @@
  border-radius: 50%;
 }
 .mobile-menu:hover {
-  background-color: rgb(255, 251, 166);
+  background-color: #ff5900dd;  
+  transition: background-color .7s;
 }
 .display-menu-mobile {
-  display: block;
   position: absolute;
   left: 60vw;
   top: 19vh;
@@ -50,10 +58,16 @@
   background-image: linear-gradient(to bottom, rgb(255, 240, 126), rgb(255, 255, 154), rgba(246, 255, 162, 0.856));
   border-top: 0px;
   border-radius: 30px 0px 0px 30px;
-  transform: translate();
+  transform: translateX(0%);
+
+ 
+}
+.display-menu-active {
+  display: block; 
+  transition: display 1.2s;
 }
 body {
-  overflow-x: hidden;
+  *overflow-x: hidden;/*Se algo transbordar do body, ele ignora*/
 }
 main {
   background: url(../img/banana-back.jpg)no-repeat top left;
