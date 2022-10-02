@@ -1,0 +1,56 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+ }
+
+ .menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(255, 240, 126);
+  box-shadow: 1px 1px 1px black;
+  height: 9vh;
+ }
+ .menu-list {
+  display: flex;
+
+ }
+.menu-list li {
+  letter-spacing: 0.4px;
+  margin-left: 10px;
+
+}
+.menu-list a {
+  color: rgb(23, 5, 5);
+
+}
+.menu-list a:hover {
+  color: rgb(172, 6, 6);
+  text-decoration: revert;
+
+}
+.mobile-menu {
+ display: flex;
+}
+.display-menu-mobile {
+  display: block;
+  position: absolute;
+  left: 60vw;
+  top: 9vh;
+  width: 40vw;
+  height: 50vh;
+  background-color: black;
+  transform: translate();
+}
+body {
+  overflow-x: hidden;
+}
+main {
+  background: url(../img/banana-back.jpg)no-repeat top left;
+  background-size: cover;
+  height: 91vh;
+}
