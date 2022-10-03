@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Grid</title>
+
+<style>
+  * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  
+  }
+  body {
+    background-color: grey;
+  }
+  .separaçao {
+    padding: 8px;
+    margin: 4px;
+    text-align: center;
+  }
+  div {
+  background-color: rgb(35, 33, 33);
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px;
+  color: white;
+}
+  .container {
+    background-color: rgb(74, 74, 74);
+    padding: 20px;
+    display: grid;
+    height: 60vh;
+    grid-template-columns: 100px 40vw auto; /* (altura vertical) Define o tamanho das colunas (larguram das colunas e as fatia em determinados valores dependendo da quantidade de valores fatiados)*/
+    grid-template-rows: 10vh auto; /*define o tamanho das linhas (altura horizontal)*/
+    gap: 10px 40px;
+    text-align: center;
+    
+  }
+  .container-2 {
+    padding: 12px;
+    background-color: grey;
+    display: grid;
+    gap: 8px;
+    grid-template-areas: 
+      'a b b' /*Cria uma divisão para cara nome escolhido, divida em ("a" "b" "b")  primeiro conteudo será a e depois duas divisorias chamadas "b" que podem ser dadas os filhos*/
+      'c c c'
+      'd d e '
+      'f g g '; 
+  }
+  .cont-1 {
+    grid-area: a;
+    height: 50vh;
+    border-radius: 20px;
+  }
+  
+  .cont-2 {
+    grid-area: b;
+    height: 30vh;
+    border-radius: 20px;
+  }
+  
+  .cont-3 {
+    grid-area: c;
+    border-radius: 20px;
+    background-color: blue;
+  }
+  
+  .cont-4 {
+    grid-area: d;
+    height: 40vh;
+    border-radius: 20px;
+  }
+  
+  .cont-5 {
+    grid-area: e;
+    height: 60vh;
+    border-radius: 20px;
+  }
+  
+  .cont-6 {
+    grid-area: f;
+    border-radius: 20px;
+  }
+  .cont-7 {
+    grid-area: g;
+    border-radius: 20px;
+  }
+
+  .container-3 {
+    display: grid;
+    width: 60vw;
+    margin: auto;
+    margin-top: 5px;
+    background-color: rgb(41, 41, 41);
+    height: 50vh;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-4 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .cont-box1 {
+    /*mostra como o filho deve se alinhar na caixa, lembrando que o inicio d linha é sempre 0 ou seja se existe 3 colunas o valor inicial é 0 o item 1 o valor final 4*/
+    grid-column-end: 3;
+    grid-column-start: 1; 
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  .cont-box2 {
+    grid-row-start: 1;  
+    grid-row-end: 3;
+  }
+  .cont-box3 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 5;
+  }
+  .cont-box4 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+  .cont-box5 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  .cont-box6 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+  }
+</style>
+
+</head>
+<body>
+  <div class="separaçao">Grid Template Column e Row</div>
+
+  <article class="container">
+    <div>Content 1</div>
+    <div>Content 2</div>
+    <div>Content 3</div>
+    <div>Content 4</div>
+    <div>Content 5</div>
+    <div>Content 6</div>
+  </article>
+
+<div class="separaçao">Grid Template Areas</div>
+
+  <article class="container-2">
+    <div class="cont-1">Content 1</div>
+    <div class="cont-2">Content 2</div>
+    <div class="cont-3">Content 3</div>
+    <div class="cont-4">Content 4</div>
+    <div class="cont-5">Content 5</div>
+    <div class="cont-6">Content 6</div>
+    <div class="cont-7">Content 7</div>
+  </article>
+
+<div class="separaçao">Justift e Align</div>
+
+  <article class="container-3">
+    <div>Content 1</div>
+    <div>Content 2</div>
+    <div>Content 3</div>
+    <div>Content 4</div>
+    <div>Content 5</div>
+    <div>Content 6</div>
+  </article>
+
+  <div class="separaçao">Grid Column Start</div>
+
+  <article class="container-4">
+    <div class="cont-box1">Content 1</div>
+    <div class="cont-box2">Content 2</div>
+    <div class="cont-box3">Content 3</div>
+    <div class="cont-box4">Content 4</div>
+    <div class="cont-box5">Content 5</div>
+    <div class="cont-box6">Content 6</div>
+  </article>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+Grid Layout Anotaçoes sobre as configuraçoes:: { 
+  (
+
+)
+}
+
+Grid para os container:: {
+  (
+     grid-template-columns: ; -- define a largura do elemento
+     grid-template-row: ; -- define o altura do elemento
+     gap:; -- espaçamento entre os itens (primeiro linha depois colunas)
+     grid-row-gap: ; -- valor especificado para o espaçamento entre linhas
+     grid-colunm-gap: ; -- valor especificado para espaçamento em colunas
+)
+}
+Grid filhos configuraçoes:: {
+  (
+
+)
+}
+
+Unidades em Grid:: {
+  (
+
+)
+}
