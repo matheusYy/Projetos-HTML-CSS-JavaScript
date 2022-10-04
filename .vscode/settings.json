@@ -1,0 +1,4 @@
+{
+  "workbench.activityBar.iconClickBehavior": "focus",
+  "files.autoSave": "onFocusChange"
+}

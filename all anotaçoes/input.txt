@@ -1,0 +1,120 @@
+Sobre input:
+form, sempre deve ser usado em formularios e contem algumas configuraçoes.
+  exemplos:
+    <form autocomplete="off" action="cadastro.php">
+
+    autocomplete -- ao escrever algo no formulario, mostra algumas opçoes para completar automaticamente o formulario
+
+    action --  seria um comando para chamar uma linguagem de progamaçao, como php
+
+
+label -- etiqueta para formularios, como sempre, ele é extremamente importante para formularios       
+
+
+
+Existem dois metodos para envio de formularios de forma simples
+
+method="post"
+method="get"
+
+GET ou POST
+
+GET -- Padrão, ele mostra os dados na url (como quando você faz uma pesquisa no google)
+POST -- Os dados não sãp mostrados na url mas ele pode ser visto se o site for "inspecionado"
+
+os dois não protegem os dados, apenas não mostra de forma escancarada para o usuario, para realmente proteger os dados eles teriam que ser criptografados usando "https" (por enquanto não é necessario estudar) 
+
+O metodo de GET, apenas envia dados em até 3 mil bytes que é aproximadamente 3 mil letras
+  GET não é recomendado para envio de dados sensiveis, como senhas, numero de cartão de credito, fotos, endereços
+  ou envio de qualquer coisa no geral
+
+POST se for maior que 3 mil bytes POST pode ser usado, e se for para enviar algo POST é recomendado
+mas para segurança como dados de cartão a segurança do tipo 'http' é recomendado que é o oposto de GET
+e se você quiser se os dados não sejam mostrado na url
+
+ALGUMAS CONFIGURAÇOES PARA INPUTS
+
+autofocus -- deixa o input selecionado logo de padrão
+
+min-length -- minímo de caracteres que devem ser colocados no input
+
+max-length -- maximo de caracteres que podem ser colocados no input
+
+required -- o usuario só pode avançar se o input for preenchido
+
+placeholder -- caixa que ficará dentro do input e pode ser usado para dar dicas do que é para ser preenchido
+
+autocomplete -- é a mesma caixa que é usada no form, porém em vez de on e off no input você especifica oque seria preenchido, senha, nova senha, nome de usuario etc (formularios normalmente já vem habilitado para facilitar para o usuario preencher o campo especifico)
+current-password --- senha atual do usuario
+new-password --- novo campo de senha para o usurario
+username --- nome de usuario
+--------------------------------------------------------------------------------------------
+exemplos no form1.html
+  
+input de numeros:
+
+    min -- seria para deixa uma caixa ao lado com valores de min a max
+    max -- valor maximo na caixa ao lado do input que normalmente são numeros
+
+    step -- seria um complemento do min e max, seria quanto aumentaria se você clicasse no botão de aumentar 
+-----------------------------------------------------  
+
+size -- tamanho da caixa do input, é o quanto de letras a caixa irá mostrar
+
+alguns atributos não funcionam em alguns inputs, estudar sobre eles quando for necessario
+
+(lembrando toda configuraçao é colocada dentro do input)
+
+  exemplo:
+    <input type="text" name="usu" id="io-usu" required minlength="5" maxlength="15" placeholder="user" autocomplete="username">
+
+---------------------------------
+FIELDSET -- coloca uma borda em volta do form, é como se fosse uma separaçao de dados de temas, ele serve para juntar varios tipos de input
+LEGEND -- serve para escrever algo em um FIELDSET pode ser util para nomear um FIELDSET (agromerado de dados cadastrais)
+
+ESTUDAR MAIS SOBRE EXPREÇOES REGULAR OU RegEx
+
+----------------------
+BOTOES DE RADIO E CHECKED
+
+Botoes de radio só podem ser selecionados apenas um deles, informaçoes de apenas uma resposta e o input deve estar com o mesmo name para estar relacionado senão poderá ser marcado mais de uma opçao 
+Todos os botoes de tipo radio que estão relacionados devem ter o mesmo name e ID diferentes
+
+ 
+ exemplo:
+  label for masc
+    <input type="radio" name="sexo" id="masc" checked>
+  label for fem
+    <input type="radio" name="sexo" id="fem" checked>
+
+Botoes de checked, podem ter varias opçoes de marcaçao e não apenas uma igual aos botoes de radio
+
+  exemplo:
+
+      <label for="selc">Futubol</label>
+        <input type="checkbox" name="check" id="selc" checked> <br>
+      <label for="selc1">Box</label>
+        <input type="checkbox" name="check" id="selc1"> <br>
+      <label for="selc2">Skate</label>
+        <input type="checkbox" name="check" id="selc2"> <br>
+
+Alguns outros inputs
+
+<label for="cor">Cores</label>
+    <input type="color" name="cor" id="cor"> <br>
+ <label for="rag">Range</label>
+     <input type="range" name="range" id="rag" min="1" max="100" value="10">
+  <label for="file">File</label>
+      <input type="file" name="file" id="file">
+
+
+Input:color -- o usuario pode escolher varias cores no espectro de cores
+
+Input:range -- um medidor de satisfaçao que pode ser configurado com max e min, value deixa um valor padrâo a caixa range
+
+Input:file -- Input para o usuario enviar arquivos, apenas com o metodo POST para enviar os arquivos
+
+ALGUNS ELEMENTOS FORA DO INPUT 
+
+  exemplos:
+  

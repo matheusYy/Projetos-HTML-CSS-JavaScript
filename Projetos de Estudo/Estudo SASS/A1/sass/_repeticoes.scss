@@ -5,7 +5,7 @@
 }
 
 //array em scss
-
+/**/
 $cores: (color1: red, color2: blue, color3: yellow);
 
 @each $key, $color in $cores { //se foi usado chaves é necessario o uso de key, as chaves são color1 etc
