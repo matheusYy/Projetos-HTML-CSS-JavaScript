@@ -1,0 +1,43 @@
+header {
+  height: 17vh;
+
+    nav {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      gap: 0px;
+      align-content: center;
+      flex-wrap: wrap;
+      padding: 15px;
+    
+    a {
+      color: pink;
+      flex-grow: 0;
+      flex-shrink: 0;   
+      flex-basis: 30vw;
+      text-align: center;   
+    }
+        ol {
+          display: flex;
+          flex: 1;
+          gap: 3vw;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+
+            a {
+              text-decoration: none;
+              padding: 8px;
+              color: #ffc1d0;
+              background-color: #8000ff; 
+              border-radius: 20px;
+              
+                a:hover {
+                  background-color: #9c3aff;  
+                  color: rgb(255, 161, 177);
+                }
+            }
+      
+        } //ol
+    } //a
+} //header    

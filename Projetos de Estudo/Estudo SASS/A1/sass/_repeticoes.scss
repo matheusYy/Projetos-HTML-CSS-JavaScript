@@ -1,0 +1,35 @@
+ @for $i from 1 through 4 {     //Modo de repetiçao for through
+     .text-#{$i} {
+        color: red;
+   }
+}
+
+//array em scss
+
+$cores: (color1: red, color2: blue, color3: yellow);
+
+@each $key, $color in $cores { //se foi usado chaves é necessario o uso de key, as chaves são color1 etc
+  .#{$color}-text {
+     color: darken($color, $amount: 30); } 
+}
+/*
+Algumas funçoes do sistema
+
+lighten() ::> ele deixa a cor mais clara
+darken() ::> ele escuresse a cor
+dentro da documentaçao do sass contem muitas outros opçoes etc*/
+.container2 {
+  background-color: #7830bc;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+
+     div.filho-2 {
+      width: 40px;
+      height: 40px;
+      margin: 10px;
+      text-align: center;
+      color: rgb(0, 0, 0);
+      background-color: rgb(255, 150, 232);
+    }
+}

@@ -1,0 +1,132 @@
+@charset "UTF-8";
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  box-shadow: 1px 1px 7px 0px black;
+  border: red;
+  width: 80vw;
+  height: 80vh;
+  background-color: #25002a;
+  margin: auto;
+}
+.container .filho-1 {
+  color: white;
+  text-align: center;
+}
+.container div {
+  box-shadow: 1px 1px 7px 0px #d72222;
+  border: #ffffc1;
+  background-color: #c800ff;
+  width: 100px;
+  height: 100px;
+  padding: 1px;
+  display: block;
+}
+
+.text-1 {
+  color: red;
+}
+
+.text-2 {
+  color: red;
+}
+
+.text-3 {
+  color: red;
+}
+
+.text-4 {
+  color: red;
+}
+
+.red-text {
+  color: #660000;
+}
+
+.blue-text {
+  color: #000066;
+}
+
+.yellow-text {
+  color: #666600;
+}
+
+/*
+Algumas funçoes do sistema
+
+lighten() ::> ele deixa a cor mais clara
+darken() ::> ele escuresse a cor
+dentro da documentaçao do sass contem muitas outros opçoes etc*/
+.container2 {
+  background-color: #7830bc;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+.container2 div.filho-2 {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 150, 232);
+}
+
+.flex, .as {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.as {
+  width: 80vw;
+  height: 600px;
+  background-color: #ffea00;
+}
+.as div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background-color: black;
+}
+
+.referencia {
+  background-color: rgb(83, 0, 70);
+  width: 90vw;
+  height: 500px;
+}
+.referencia div {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  color: white;
+}
+.referencia div:hover {
+  background-color: beige;
+  color: black;
+}
+.referencia p {
+  color: white;
+}
+.referencia p:hover {
+  background-color: red;
+  color: black;
+}
+
+body {
+  background-color: #27153b;
+  color: rgba(255, 170, 170, 0.8039215686);
+}
+
+p {
+  color: rgba(255, 170, 170, 0.8039215686);
+}/*# sourceMappingURL=main.css.map */

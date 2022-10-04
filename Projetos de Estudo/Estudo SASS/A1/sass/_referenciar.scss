@@ -1,0 +1,25 @@
+.referencia {
+  background-color: rgb(83, 0, 70);
+  width: 90vw;
+  height: 500px;
+
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    &:hover {
+      background-color: beige;
+      color: black;
+    }
+  }
+  p {
+    color: white;
+    &:hover {
+      background-color: red;
+      color: black;
+    }
+  }
+
+  
+}

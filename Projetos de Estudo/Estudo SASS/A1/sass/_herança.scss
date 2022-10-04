@@ -1,0 +1,24 @@
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.as {
+  width: 80vw;
+  height: 600px;
+  background-color: #ffea00;
+  @extend .flex;
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+
+    height: 100px;
+    margin: 10px;
+    background-color: black;
+  }
+}

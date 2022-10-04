@@ -1,0 +1,42 @@
+Grid Layout Anotaçoes sobre as configuraçoes:: { 
+  (
+
+    grid-templat-areas:: basicamente cada "coisa" que você irá colocar criará cada partiçao em colunas, pode ser qualquer coisa menos numeros
+
+  Posiçao Vertical {  
+    grid-column-start(end):: cada item define quanto cada item irá ocupar cada espaço, os elemetos sempre serão com um numero a mais, primeira linha (1) a ultima linha caso o tenha 3 colunas seria a (4) se fosse 5 colunas terminaria na (6) para o item ocupar todo espaço
+    }
+    Posiçao Horizontal {
+      grid-row-start(end):: novamente é importante lembrar a ordem de cada item, se tivermos 3 linhas com 3 colunas, grid-row-start: 1; seria na primeira linha na Horizontal se fosse (2) na segunda linha, se grid-row-end: 4; a linha terminaria ocupando toda as linhas até a ultima; por que existem apenas 3 linhas nesse exemplo sendo que a primeira começa com (1) e a ultima com (4) 
+    }
+)
+}
+
+Grid para os container:: {
+  (
+     grid-template-columns: ; -- define a largura do elemento
+     grid-template-row: ; -- define o altura do elemento
+     gap:; -- espaçamento entre os itens (primeiro linha depois colunas)
+     grid-row-gap: ; -- valor especificado para o espaçamento entre linhas
+     grid-colunm-gap: ; -- valor especificado para espaçamento em colunas
+     grid-template-areas: ; -- Cria uma divisão para cada item adicionado, 'a a a' essa configuraçao criaria
+     3 colunas e usando o grid-areas em algum elemento ele poderia ter essa configuraçao 
+
+)
+}
+Grid filhos configuraçoes:: {
+  (
+    grid-area:; -- serve para dar as configuraçoes que foram colocadas no grid-template-areas para o elemento
+    grid-column-start: ; -- define aonde o elemento começa em colunas
+    grid-column-end: ; -- define aonde o elemento termina em colunas
+    grid-row-start: ; -- define em qual linha o elemento irá começar
+    grid-column-end: ; -- define em qual linha o elemento irá terminar 
+
+)
+}
+
+Unidades em Grid:: {
+  (
+
+)
+}

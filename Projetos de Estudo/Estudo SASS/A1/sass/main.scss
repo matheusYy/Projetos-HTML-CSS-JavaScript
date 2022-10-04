@@ -1,0 +1,16 @@
+@import 'base'; //emcadeamento e mixin, funçoes e valores boleano
+
+@import 'repeticoes'; //repetiçoes
+
+@import 'herança';
+
+@import 'referenciar';
+$color: #ffaaaacd;
+
+body {
+  background-color: #27153b;
+  color: $color;
+}
+p {
+  color: $color;
+}

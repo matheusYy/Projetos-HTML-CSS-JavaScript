@@ -1,0 +1,52 @@
+.main-io {
+  margin: auto;
+  width: 80vw;
+  height: 70vh;
+  display: grid;
+  grid-template-areas: 
+  'header imagem'
+  'headertwo imagem'
+  'para imagem';
+
+  .imagem {
+    background-color: transparent;
+    width: 44vw;
+    grid-area: imagem;
+    position: relative;
+  
+    img {
+      width: 100%;
+      height: 100%;
+      padding: 0px 5px 14px 2px;
+      margin: -27px 1px -4px -2pc;
+   }
+  }
+
+  .titulo {
+    background-color: transparent;
+    color: azure;
+    grid-area: header;
+    font-size: 4.6em;
+    width: 9vw;
+    height: 58px;
+    font-weight: 900;
+    grid-column: 30px;
+    color: #ffb0c5;
+  
+    .titulo2 {
+      display: grid;
+      grid-column-start: 1;
+      grid-row-start: 2;
+  
+      color: #e1ff00; //#8000ff;
+    
+      p {
+        background-color: transparent;
+        grid-area: para;
+        height: 37vh;
+        color:rgb(255, 237, 237);
+        padding: 32px 0px;
+      } 
+    }
+  }
+}

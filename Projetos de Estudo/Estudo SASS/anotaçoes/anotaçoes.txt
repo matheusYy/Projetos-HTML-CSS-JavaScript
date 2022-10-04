@@ -1,0 +1,148 @@
+Coisas que são possiveis com scss:: { 
+  (
+
+Variaveis usando "$" (dolar):: criando a variavel: $variavel: black;
+  
+  Usando a variavel:: {
+    p {
+      color: $variavel;
+}
+  Sobre Variaveis:: {
+    Caso exista um escopo com uma variavel nele, essa variavel só pode ser usada dentro desse escopo, caso a variavel esteja no topo, sem estar dentro de qualquer escopo ela pode ser usada de forma global com qualquer elemento
+}
+
+}
+Imports em SCSS e os Partials:: é possivel criar arquivos com o "underline" no inicio, o scss não compila esses arquivos se não for usada a tag import 
+
+@import (nome do arquivo sem o underline e sem o ponto scss no final);
+
+  exemplo:: @import 'outro-scss'; -- certo
+            @import '_name-file.scss' -- errado
+}
+
+Emcadeamento em scss:: {
+  Podemos dentro de um escopo:: scopo seria o abrimento das chaves e o seu fechamento.
+    Exemplo: {
+      div {
+        background-color: black;
+        width: 200px;
+        height: 200px;
+          p {  
+              color: white;
+            }
+          }
+
+Podemos colocar um item dentro de outro em scss, isso facilita quando existe uma grande projeto
+}
+
+Mixin:: {
+ 
+ Ele tem uma caracteristica de funçao em JavaScript, exemplo:
+
+ @mixin box-shadow ($color) {
+  box-shadow: 1px 1px 1px black;
+ } 
+
+ p {
+  @include box-shadow (black);
+ }
+
+  @include _> :: basicamente inclui o mixin em algum elemento
+
+ -- Estudar mais sobre suas funcionalidades depois
+}
+Condicionais:: {
+  podemos usar variaveis do tipo bolleanos em scss, exemplo:
+
+Criando o mixin com variavel e usando if e else:: {
+    @mixin text-effect ($var) {
+      @if $var == perigo {
+        color: red;
+      }
+      @else {
+        color: white;
+      }
+    }
+    p {
+      @include text-effect (perigo);  - ::paragrafo receberia a cor vermelha
+    }
+}
+}
+Repetiçoes em scss:: {
+
+Anotaçoes e observaçoes minhas:: {
+  O modo de repetiçao é o mesmo em outras linguagens, a unica diferença é que em scss a sintaxe é diferente e usamos @ para chamar ela, não precisa de aspas etc....
+}
+
+ exemplo: 
+   @for $i from 1 through 4 {
+    .text-#{$i} {
+      padding: 10px;
+      width: 60px;
+      height: 60px;
+
+@Each {
+  É possivel criar arrays no SCSS:
+
+Exemplo ::> existem mais de uma forma de fazer esse mesmo exemplo.   
+ 
+  $cores: (cor1: red, cor2: blue, cor3: yellow);
+
+@each $key, $cor in $cores {  ::> key é usado para quando existem nomes a cada item na array, exemplo: cor1
+  .#{$cores}-texto { :::> cria uma classe com nome das cores colocadas
+    color: $cores; ::> essa parte cria aplica todas as cores da array
+  }
+
+Outra forma:: {
+
+  $cores: (blue, red, yellow);
+  
+  @each $color in $colors {
+    .#{$color}-text {
+      color: $color;
+    }
+
+Outra forma:: {
+  @each $color in blue, red, yellow {
+    .#{$color}-text {
+      color: $color;
+    }
+  }
+
+Funçoes :: {
+
+}
+
+Herença :: {
+  É a funcionalida do scss de poder herdar configuraçoe em outros elementos, usando @extend
+
+.flex {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  }
+
+  div {
+  @extend .flex; >::> essa div herdou as configuraçoes do .flex.
+  }
+
+  Referencing - Referenciar ::{
+    Referenciar é usar por exemplo uma pseudo class :hover em uma elemento com no emcadeamento do item"&"
+
+    p {
+      color: white;
+      :hover {
+        color: black; >::> dessa forma não iria funcionar, para REFERENCIAR o p teria que ser ultilizado o '&' exemplo:
+        p {
+          color: white;
+
+          &:hover {
+            color: black; >::> dessa forma p é refenciado com hover usando "&"
+          }
+        }
+      }
+    }
+  }
+
+}

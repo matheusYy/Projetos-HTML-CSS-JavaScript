@@ -1,0 +1,46 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+@mixin box-shadow($color, $border) { //mixin em scss com variavel color e border
+  box-shadow: 1px 1px 7px 0px $color;
+  border: $border;
+}
+@mixin text-effect ($var) { //mixin usando valores boleanos
+  @if $var == perigo {
+    color: red;
+  }
+  @else if $var == alerta {
+    color: yellow;
+  }
+  @else {
+    color: white;
+  }
+
+}
+
+
+.container {
+  @include box-shadow(black, red);
+  width: 80vw;
+  height: 80vh;
+  background-color: #25002a;
+  margin: auto;
+
+  .filho-1 {
+    @include text-effect(none);
+    text-align: center
+  }
+    div {
+      @include box-shadow(#d72222, #ffffc1);
+      background-color: #c800ff;
+      width: 100px;
+      height: 100px;
+      padding: 1px;
+      display: block;
+    }
+
+}
+
